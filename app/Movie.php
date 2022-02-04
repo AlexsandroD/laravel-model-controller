@@ -1,16 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App;
 
-use Illuminate\Http\Request;
-use Movie;
+use Illuminate\Database\Eloquent\Model;
 
-class MovieController extends Controller
+class Movie extends Model
 {
-    public function index()
-    {
-        $movies = Movie::all();
-
-        return view('home',compact('movies'));
-    }
+    //
 }

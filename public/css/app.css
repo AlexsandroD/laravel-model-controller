@@ -36,11 +36,17 @@ body {
   margin: 10px 20px;
   padding: 10px;
   box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.71);
+  transition: 0.4s;
 }
 
 .container .card li {
   font-size: 1rem;
   font-weight: bolder;
+}
+
+.container .card:hover {
+  position: relative;
+  transform: translateY(-3px);
 }
 
 .container .card:nth-child(odd) {
@@ -65,5 +71,13 @@ body {
 
 .container .card:nth-child(even) li {
   color: #cbaacb;
+}
+
+.container .card:nth-child(odd):hover {
+  filter: invert(1);
+}
+
+.container .card:nth-child(even):hover {
+  filter: invert(1);
 }
 

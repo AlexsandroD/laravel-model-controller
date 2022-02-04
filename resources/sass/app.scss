@@ -34,10 +34,15 @@ body {
         padding: 10px;
         -webkit-box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.71);
         box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.71);
+        transition: 0.4s;
         li {
             font-size: 1rem;
             font-weight: bolder;
         }
+    }
+    .card:hover {
+        position: relative;
+        transform: translateY(-3px);
     }
     .card:nth-child(odd) {
         background-color: pink;
@@ -57,5 +62,13 @@ body {
         li {
             color: #cbaacb;
         }
+    }
+
+    .card:nth-child(odd):hover {
+        filter: invert(1);
+    }
+
+    .card:nth-child(even):hover {
+        filter: invert(1);
     }
 }

@@ -1,1 +1,61 @@
-//
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@400;700;900&display=swap");
+
+*:no(ul, li) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1610641987870-d6d8998274a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(144, 238, 225, 0.548);
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .title {
+        color: white;
+        text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
+        width: 250px;
+        justify-content: space-between;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .card {
+        max-width: 250px;
+        margin: 10px 20px;
+        padding: 10px;
+        -webkit-box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.71);
+        box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.71);
+        li {
+            font-size: 1rem;
+            font-weight: bolder;
+        }
+    }
+    .card:nth-child(odd) {
+        background-color: pink;
+        .title {
+            color: lightyellow;
+        }
+        li {
+            color: lightyellow;
+        }
+    }
+
+    .card:nth-child(even) {
+        background-color: lightyellow;
+        .title {
+            color: #cbaacb;
+        }
+        li {
+            color: #cbaacb;
+        }
+    }
+}
